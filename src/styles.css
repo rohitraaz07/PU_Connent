@@ -931,11 +931,17 @@ td {
     display: none;
   }
 
-  .mobile-panel {
-    inset: 0 8% 0 0;
+  /* .mobile-panel {
+    inset: 0;
+    animation: drawer-in 180ms ease;
+  } */
+
+    .mobile-panel {
+    inset: 0;
+    background: #ffffff !important;
     animation: drawer-in 180ms ease;
   }
-
+  
   .site-footer {
     padding: 42px 18px 22px;
   }
