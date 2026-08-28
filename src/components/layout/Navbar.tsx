@@ -84,6 +84,8 @@ const links = [
   ["Smart Card", "/smart-card"],
   ["Attendance", "/attendance"],
   ["Opportunities", "/opportunities"],
+  ["SOS", "/sos"],
+
 ];
 
 export function Navbar() {

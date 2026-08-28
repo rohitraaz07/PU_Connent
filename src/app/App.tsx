@@ -14,7 +14,7 @@ import { SmartCardPage } from "../pages/SmartCardPage";
 import { Opportunities } from "../pages/Opportunities";
 import { Attendance } from "../pages/Attendance";
 import { Profile } from "../pages/Profile";
-
+import SOS from "../pages/Sos";
 export function App() {
   const location = useLocation();
   return (
@@ -35,6 +35,19 @@ export function App() {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        {/* <Route path="/sos" element={<SOS />} /> */}
+        <Route
+          path="/sos"
+          element={
+            <div className="app-shell">
+              <Navbar />
+              <main className="page-container">
+                <SOS />
+              </main>
+              <Footer />
+            </div>
+          }
+        />
         <Route
           element={
             <ProtectedRoute>
