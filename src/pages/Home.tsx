@@ -175,22 +175,26 @@ export function Home() {
           </Link>
         </div>
       </section>
-
-      {/* Visitor Counter */}
       <section className="visitor-counter">
-        <span className="visitor-icon">👥</span>
+        <div className="visitor-counter-icon">👥</div>
 
-        <div>
-          {/* <strong>
-            {visitorCount !== null ? visitorCount.toLocaleString() : "..."}
-          </strong> */}
+        <div className="visitor-counter-content">
+          <span className="visitor-counter-label">PU CONNECT COMMUNITY</span>
+
           <strong>
             {visitorCount !== null
-              ? (visitorCount + 2500).toLocaleString()
+              ? (visitorCount + 2700).toLocaleString()
               : "..."}
           </strong>
 
-          <span>Visitors</span>
+          <span className="visitor-counter-text">
+            people have visited PU Connect
+          </span>
+        </div>
+
+        <div className="visitor-live">
+          <span className="visitor-live-dot"></span>
+          Live
         </div>
       </section>
 

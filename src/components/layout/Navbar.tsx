@@ -216,6 +216,7 @@ const links = [
   ["Smart Card", "/smart-card"],
   ["Attendance", "/attendance"],
   ["Opportunities", "/opportunities"],
+  // ["Sos", "/sos"],
 ];
 
 export function Navbar() {
@@ -255,6 +256,12 @@ export function Navbar() {
         <span className="brand-mark">PU</span>
         <span>PU Connect</span>
       </button>
+       <button
+            className="primary-button nav-guest-button sos-nav-button"
+            onClick={() => navigate("/sos")}
+          >
+            🚨 SOS
+          </button>
 
       <nav className="desktop-nav" aria-label="Primary navigation">
         {content}
@@ -290,12 +297,7 @@ export function Navbar() {
           </div>
 
           {/* SOS button - kept separate so it remains visible on mobile */}
-          <button
-            className="primary-button nav-guest-button sos-nav-button"
-            onClick={() => navigate("/sos")}
-          >
-            🚨 SOS
-          </button>
+         
         </>
       )}
 
