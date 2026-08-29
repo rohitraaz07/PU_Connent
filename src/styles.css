@@ -2479,3 +2479,41 @@ select {
     display: flex !important;
   }
 }
+
+@media (max-width: 568px) {
+  .sos-nav-button {
+    display:none;
+    position: absolute;
+    right: 15px;
+    top: 22%;
+    z-index: 1000;
+    display: flex !important;
+  }
+}
+
+.home-sos-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  padding: 14px 24px;
+
+  border-radius: 12px;
+
+  background: #e91e63;
+  color: #ffffff;
+
+  text-decoration: none;
+  font-weight: 800;
+
+  box-shadow: 0 8px 20px rgba(233, 30, 99, 0.25);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-sos-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(233, 30, 99, 0.35);
+}
+

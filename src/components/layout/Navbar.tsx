@@ -83,7 +83,7 @@
 //   ["Smart Card", "/smart-card"],
 //   ["Attendance", "/attendance"],
 //   ["Opportunities", "/opportunities"],
-  
+
 // ];
 
 // export function Navbar() {
@@ -202,7 +202,6 @@
 //   );
 // }
 
-
 import { LogOut, Menu, UserCircle, X } from "lucide-react";
 import { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
@@ -257,7 +256,6 @@ export function Navbar() {
         <span>PU Connect</span>
       </button>
 
-
       <nav className="desktop-nav" aria-label="Primary navigation">
         {content}
       </nav>
@@ -289,16 +287,7 @@ export function Navbar() {
             >
               Explore Prototype
             </button>
-                   <button
-            className="primary-button nav-guest-button sos-nav-button"
-            onClick={() => navigate("/sos")}
-          >
-            🚨 SOS
-          </button>
           </div>
-
-          {/* SOS button - kept separate so it remains visible on mobile */}
-         
         </>
       )}
 
