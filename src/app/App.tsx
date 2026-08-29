@@ -35,7 +35,6 @@ export function App() {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        {/* <Route path="/sos" element={<SOS />} /> */}
         <Route
           path="/sos"
           element={
@@ -48,6 +47,7 @@ export function App() {
             </div>
           }
         />
+
         <Route
           element={
             <ProtectedRoute>

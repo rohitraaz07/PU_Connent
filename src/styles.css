@@ -2355,3 +2355,13 @@ select {
   font-size: 13px;
   color: #777;
 }
+
+@media (max-width: 768px) {
+  .sos-nav-button {
+    position: absolute;
+    right: 15px;
+    top: 20%;
+    z-index: 1000;
+    display: flex !important;
+  }
+}

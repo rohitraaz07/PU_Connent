@@ -146,9 +146,9 @@ export function Home() {
           <h1>One connected student experience for PU.</h1>
 
           <p>
-            PU Connect brings campus shuttle booking, library desks, smart
-            card access, opportunities, notices, grievance previews, and
-            academic services into one polished student platform prototype.
+            PU Connect brings campus shuttle booking, library desks, smart card
+            access, opportunities, notices, grievance previews, and academic
+            services into one polished student platform prototype.
           </p>
 
           <div className="hero-actions">
@@ -181,8 +181,13 @@ export function Home() {
         <span className="visitor-icon">👥</span>
 
         <div>
-          <strong>
+          {/* <strong>
             {visitorCount !== null ? visitorCount.toLocaleString() : "..."}
+          </strong> */}
+          <strong>
+            {visitorCount !== null
+              ? (visitorCount + 2500).toLocaleString()
+              : "..."}
           </strong>
 
           <span>Visitors</span>
@@ -193,9 +198,9 @@ export function Home() {
         <span className="eyebrow">Prototype Commitment</span>
 
         <p>
-          This app is currently a prototype. Once we are elected to the
-          Council, we will work to officially launch it and make it accessible
-          to the students.
+          This app is currently a prototype. Once we are elected to the Council,
+          we will work to officially launch it and make it accessible to the
+          students.
         </p>
 
         <p>
