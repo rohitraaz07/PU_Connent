@@ -2473,7 +2473,7 @@ select {
 @media (max-width: 768px) {
   .sos-nav-button {
     position: absolute;
-    left: 75px;
+    right: 15px;
     top: 22%;
     z-index: 1000;
     display: flex !important;
