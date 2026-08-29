@@ -2323,3 +2323,35 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+.visitor-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: fit-content;
+  margin: 30px auto;
+  padding: 12px 24px;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.visitor-icon {
+  font-size: 24px;
+}
+
+.visitor-counter div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.visitor-counter strong {
+  font-size: 24px;
+}
+
+.visitor-counter span {
+  font-size: 13px;
+  color: #777;
+}
